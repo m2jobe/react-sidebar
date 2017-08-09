@@ -220,7 +220,6 @@ class Sidebar extends Component {
   render() {
     const sidebarStyle = {...defaultStyles.sidebar, ...this.props.styles.sidebar};
     const contentStyle = {...defaultStyles.content, ...this.props.styles.content};
-    const overlayStyle = {...defaultStyles.overlay, ...this.props.styles.overlay};
     const useTouch = this.state.dragSupported && this.props.touch;
     const isTouching = this.isTouching();
     const rootProps = {
@@ -322,12 +321,7 @@ class Sidebar extends Component {
         <div className={this.props.sidebarClassName} style={sidebarStyle} ref={this.saveSidebarRef}>
           {this.props.sidebar}
         </div>
-        <div className={this.props.overlayClassName}
-             style={overlayStyle}
-             role="presentation"
-             tabIndex="0"
-             onClick={this.overlayClicked}
-          />
+
         <div className={this.props.contentClassName} style={contentStyle}>
           {dragHandle}
           {this.props.children}
@@ -408,6 +402,10 @@ Sidebar.defaultProps = {
   onSetOpen: () => {},
   styles: {},
   defaultSidebarWidth: 0,
+  sidebarClassName: "main-sidebar",
+  rootClassName: "root-sidebar",
+  contentClassName: "content-sidebar"
+
 };
 
 export default Sidebar;
