@@ -5,7 +5,6 @@ const CANCEL_DISTANCE_ON_SCROLL = 20;
 
 const defaultStyles = {
   root: {
-    position: 'absolute',
     top: 0,
     left: 0,
     right: 0,
@@ -15,7 +14,7 @@ const defaultStyles = {
   sidebar: {
     zIndex: 2,
     position: 'absolute',
-    top: 0,
+    top: '10.3%',
     bottom: 0,
     transition: 'transform .3s ease-out',
     WebkitTransition: '-webkit-transform .3s ease-out',
