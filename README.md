@@ -1,6 +1,10 @@
 React Sidebar 2.3 [![npm version](https://badge.fury.io/js/react-sidebar.svg)](http://badge.fury.io/js/react-sidebar) [![Build Status](https://travis-ci.org/balloob/react-sidebar.svg)](https://travis-ci.org/balloob/react-sidebar)
 =============
 
+Edits and differences to original repo:
+
+- Removing overlay and ensuring sidebar accounts for nav header rather than take up the entire screen height
+
 React Sidebar is a sidebar component for React 0.14+. It offers the following features:
 
   - Have the sidebar slide over main content
